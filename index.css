@@ -1,0 +1,80 @@
+.page {
+  position: relative;
+  max-width: 320px;
+  height: 95vh;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-size: 34px;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.timer {
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #6c6ced;
+  border-radius: 10px;
+}
+
+.timer__setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timer__setting-fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.timer__input {
+  padding-left: 15px;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.timer__start {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #3134cd;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.timer__start:hover {
+  background-color: #5557c9;
+}
+
+.timer__start:active {
+  background-color: #797ac7;
+}
+
+.timer__countdown {
+  margin: 15px auto;
+  font-size: 56px;
+}

@@ -7,16 +7,19 @@
   <meta name="description" content="Простой таймер обратного отсчета">
   <meta name="author" content="Константин Филяев">
   <title>Таймер</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body class="page">
   <section class="timer" aria-label="Таймер">
     <form class="timer__setting">
-      <input class="timer__set-hours" type="number" placeholder="HH">
-      <input class="timer__set-minutes" type="number" placeholder="MM" max="59">
-      <input class="timer__set-seconds" type="number" placeholder="SS" max="59">
-      <button class="timer__start" type="submit">Начать отсчет.</button>
+      <fieldset class="timer__setting-fieldset">
+        <input class="timer__input timer__input_hours" type="number" placeholder="HH" min="0">
+        <input class="timer__input timer__input_minutes" type="number" placeholder="MM" min="0" max="59">
+        <input class="timer__input timer__input_seconds" type="number" placeholder="SS" min="0" max="59">
+      </fieldset>
+      <button class="timer__start" type="submit">Начать отсчет</button>
     </form>
-    <p class="timer__countdown"></p>
+    <p class="timer__countdown">00 : 00 : 00</p>
   </section>  
 </body>
 </html>
